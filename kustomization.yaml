@@ -9,7 +9,7 @@ patchesJson6902:
       group: apps
       kind: Deployment
       name: bgd
-      namespace: bgdk
+      namespace: bgd
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/env/0/value
@@ -19,8 +19,8 @@ patchesJson6902:
       group: networking.k8s.io
       kind: Ingress
       name: bgd
-      namespace: bgdk
+      namespace: bgd
     patch: |-
       - op: replace
         path: /spec/rules/0/host
-        value: bgdk.devnation.localhost
+        value: bgd.devnation.localhost
